@@ -345,7 +345,7 @@ main .fourthSection .cards .card p {
 main .fourthSection .cards .card .project-photo {
     overflow: hidden;
     border-radius: 10px;
-    background-image: url(images/project\ image.png);
+    background-image: url(images/project\ image.jpg);
     object-fit: cover;
     background-size: cover;
     /* Cover the entire div */
