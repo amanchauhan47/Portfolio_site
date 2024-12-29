@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgcolor: rgb(0, 0, 33);
+    --seccolor: #ac54fd;
+    --underline: rgb(153, 153, 255);
+    --bgpurple: rgb(135, 57, 250);
+}
+
+body {
+    background-color: var(--bgcolor);
+    color: whitesmoke;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    /* background-color: rgb(8, 8, 54); */
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    /* background: rgba(255, 255, 255, 0.1); */
+    z-index: 10;
+    background: transparent;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+main {
+    padding-top: 70px;
+}
+
+header .right ul {
+    display: flex;
+    justify-content: center;
+}
+
+header .right ul li {
+    list-style: none;
+    margin: 0 18px;
+    cursor: pointer;
+}
+
+header .right ul li a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 4px rgb(92, 92, 92);
+    transition: 0.2s;
+}
+
+header .right ul li a:hover {
+    color: var(--seccolor);
+    text-shadow: none;
+}
+
+header nav .left {
+    font-family: "Saira Stencil One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+main .firstSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    gap: 10%;
+}
+
+main .firstSection>div {
+    width: 30%;
+}
+
+main .firstSection .leftSection {
+    font-size: 2.5rem;
+}
+
+
+.rightSection img {
+    width: 65%;
+    /* filter: drop-shadow(0px 0px 4px var(--seccolor)); */
+}
+
+.rightSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstSection .leftSection .name,
+nav .logo,
+footer .logo {
+    color: var(--seccolor);
+}
+
+.firstSection .leftSection #element {
+    color: var(--seccolor);
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: 80px auto;
+}
+
+main>hr {
+    margin: 45px 7%;
+    border: 0;
+    height: 1px;
+    background-color: var(--underline);
+}
+
+main section h1 {
+    font-size: 1.9rem;
+}
+
+main section span:first-child {
+    color: gray;
+}
+
+.secondSection .vertical {
+    background: white;
+    width: 2px;
+    height: 50vh;
+    margin: 20px auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+}
+
+.secondSection .vertical .horizontal {
+    background-color: rgb(255, 255, 255);
+    width: 15vw;
+    height: 2px;
+}
+
+.secondSection .line1 {
+    align-self: flex-end;
+    /* margin-right: 30px; */
+
+}
+
+.secondSection .line2 {
+    align-self: flex-start;
+    /* margin-left: 30px; */
+}
+
+.secondSection .first-exp {
+    position: relative;
+    top: -76px;
+    right: 291px;
+}
+
+/* .secondSection .first-exp .exp-desc{
+            width: 240px;
+        } */
+
+.secondSection .second-exp {
+    position: relative;
+    left: 310px;
+    top: -68px;
+}
+
+main .firstSection .btn button {
+    padding: 12px 21px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+main .firstSection .btn .resume {
+    transition: 0.2s ease;
+    white-space: nowrap;
+}
+
+main .firstSection .btn .resume:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+main .firstSection .btn .talk {
+    color: white;
+    background: linear-gradient(90deg, #5d0cff, #9b00fa);
+    margin-left: 10px;
+    transition: 0.2 ease;
+}
+
+main .firstSection .btn .talk:hover {
+    color: white;
+    background: linear-gradient(90deg, #9b00fa, #5d0cff);
+    margin-left: 10px;
+}
+
+main .firstSection .btn {
+    margin-top: 30px;
+}
+
+main .exp-desc {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+main .exp-title {
+    font-size: 20px;
+}
+
+main .image {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1c1ff;
+    overflow: hidden;
+}
+
+main .line1 .image {
+    position: relative;
+    left: 310px;
+    bottom: 30px;
+}
+
+main .line2 .image {
+    position: relative;
+    left: -69px;
+    bottom: 25px;
+}
+
+main .line1 .image img {
+    width: 40px;
+}
+
+main .line2 .image img {
+    width: 90px;
+}
+
+main .thirdSection {
+    max-width: 80vw;
+    margin: 80px auto;
+}
+
+main .thirdSection .container {
+    width: 75vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+main .thirdSection .container .item {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--seccolor);
+    /* border: 2px solid white;*/
+    background-color: rgb(25 25 25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main .thirdSection .container .item img {
+    width: 65px;
+    transition: 0.2s;
+}
+
+main .thirdSection .container .item img:hover {
+    scale: 1.2;
+}
+
+main .fourthSection {
+    max-width: 80vw;
+    margin: 80px auto;
+}
+
+@media only screen and (max-width: 900px) {
+    main .fourthSection .cards {
+
+        flex-direction: column;
+    }
+}
+
+main .fourthSection .cards {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding: 0px 50px;
+    margin: 50px auto;
+    gap: 5%;
+}
+
+
+main .fourthSection .cards .card {
+    border: 3px solid rgba(134, 57, 250, 0.693);
+    width: 380px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 17px;
+    background-color: rgb(25 25 25);
+}
+
+
+main .fourthSection .cards .card p {
+    font-size: 14px;
+    color: grey;
+
+    margin: 10px 0px 26px 0px;
+}
+
+main .fourthSection .cards .card .project-photo {
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url(images/project\ image.png);
+    object-fit: cover;
+    background-size: cover;
+    /* Cover the entire div */
+    background-position: center;
+    /* Center the image */
+    width: 345px;
+    height: 250px;
+}
+
+.fourthSection .cards .card .project-content h3 {
+    font-size: 1.5rem;
+}
+
+.fourthSection .cards .card .project-content {
+    margin: 15px 0px;
+}
+
+main .fourthSection .cards .card a {
+    text-decoration: none;
+    color: white;
+    /* background: linear-gradient(90deg, #5d0cff, #9b00fa); */
+    background-color: rgb(135, 57, 250);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 22px;
+    transition: 0.2s ease;
+    font-weight: 600;
+}
+
+main .fourthSection .cards .card a:hover {
+    background-color: rgb(123, 34, 255);
+
+}
+
+
+
+main .fifthSection {
+    max-width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+main .fifthSection .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+    margin: 50px 0px 80px 0px;
+    padding: 0px 50px;
+}
+
+main .fifthSection .form .location {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .fifthSection .form .location .info {
+    width: 68%;
+}
+main .fifthSection .form .location .info .data{
+    margin-bottom: 15px;
+}
+main .fifthSection .form .location .info .data p{
+    color: rgb(153, 153, 153);
+}
+
+main .fifthSection .form .location .info ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main .fifthSection .form .location .info ul li {
+    list-style: none;
+}
+
+main .fifthSection .form .location .info ul li a{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+main .fifthSection .form .location .map {
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+main .fifthSection .form .contact-form {
+    /* border: 3px solid rgba(134, 57, 250, 0.693); */
+    background-color: rgb(20, 20, 20);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    min-height: 572px;
+    
+}
+
+main .fifthSection .contact-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    left: 5%;
+    top: 22px;
+}
+main .fifthSection .contact-form form button{
+    position: relative;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    width: 100px;
+    border-radius: 10px;
+    border:none;
+    font-weight: 500;
+}
+main .fifthSection .contact-form form button:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+main .fifthSection .contact-form input {
+    height: 48px;
+    color: grey;
+    flex-grow: 1;
+}
+
+main .fifthSection .contact-form label {
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+main .fifthSection .contact-form textarea {
+    resize: vertical;
+    overflow-y: auto;
+}
+
+main .fifthSection .contact-form textarea,
+main .fifthSection .contact-form input {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(10, 10, 10);
+    color: whitesmoke;
+    padding: 10px;
+    border-color: orange;
+    width: 90%;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+footer {
+    background-color: rgb(20, 20, 20);
+    padding: 20px 0px;
+    box-shadow: 10px 10px 40px var(rgb(25 25 25));
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .footer .rights {
+    color: rgb(155, 155, 155);
+}
+
+footer .footer .first-footer {
+    font-family: "Saira Stencil One", serif;
+    font-size: 2rem;
+}
+
+footer .footer #hackwithaman {
+    color: var(--bgpurple);
+}
