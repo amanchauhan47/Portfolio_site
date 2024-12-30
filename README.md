@@ -2,7 +2,7 @@
 
 Welcome to my first portfolio website! 🌐 This project is a simple demonstration of my understanding of HTML, CSS, and JavaScript, showcasing basic web technologies as part of my skill set.
 
-You can check out my portfolio [here](https://amanchauhan47.github.io/Portfolio_site/).
+You can check out my portfolio <a href="https://amanchauhan47.github.io/Portfolio_site" target="_blank">here</a>.
 
 As a penetration tester, this portfolio highlights my foundational knowledge of web development, which complements my expertise in identifying and mitigating vulnerabilities in web applications.
 
